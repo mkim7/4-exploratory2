@@ -15,7 +15,7 @@ coalNEI <- NEI[NEI$SCC %in% coalSCCcharacter, ]
 
 coaldata <- with(coalNEI, aggregate(Emissions, by = list(year), sum))
 
-plot(coaldata, type="o", ylab="Total Emissions", xlab="Year", main="Emissions from Coal Combustion-related Sources in the US")
+plot(coaldata, type="o", ylab="Total Emissions", xlab="Year", main="Emissions from Coal Combustion in the US")
         
         
 dev.copy(png, file="plot4.png", height=480, width=480)

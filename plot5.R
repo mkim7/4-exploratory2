@@ -18,7 +18,7 @@ motordatabaltimore <- motorNEI[which(motorNEI$fips == "24510"), ]
 
 totalmotordatabaltimore <- with(motordatabaltimore, aggregate(Emissions, by=list(year), sum))
 
-plot(totalmotordatabaltimore, type="o", ylab="Total Emissions", xlab="Year", main = "Total Emissions from Motor Vehicle Sources in Baltimore City")
+plot(totalmotordatabaltimore, type="o", ylab="Total Emissions", xlab="Year", main = "Total Emissions in Baltimore City (Motor Vehicles)")
 
-dev.copy(png, file="plot5.png", height=480, width=480)
+dev.copy(png, file="plot5.png", height=480, width=550)
 dev.off()
